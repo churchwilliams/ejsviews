@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <h1>Ambient</h1>
+    <% for (var i = 0; i < favoriteAmbient.length; i++) { %>
+    	<p><%= favoriteAmbient[i].toUpperCase() %></p>
+    <% } %>
+
+    <p> <%= favoriteAmbient.length %>  </p>
+
+    <p>  <% if (mathBook) { %>  
+    		<span>Euclid is cool!</span>
+    	 <% } %>
+
+    </p>
+
+  </body>
+</html>
